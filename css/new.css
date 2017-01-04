@@ -1,3 +1,8 @@
+/*General pourpose*/
+.pull-up {
+  margin-top: -20px;
+}
+
 /*Landing Page*/
 .intro-header {
   background: url(../images/background2.jpg) no-repeat center center;
