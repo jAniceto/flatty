@@ -47,6 +47,7 @@
       return false;
     };
   </script>
+
 </head>
 
 <body id="home">
@@ -58,8 +59,8 @@
 			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">José Aniceto</h1>
 			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Chemical Engeneering</h3>
 			<ul class="list-inline intro-social-buttons">
-				<li><a href="#downloadlink" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Download CV</span></a></li>
-				<li id="download" ><a href="#screen" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Publications</span></a></li>
+				<li><a href="#downloadlink" class="btn btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Download CV</span></a></li>
+				<li id="download" ><a href="#screen" class="btn btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Publications</span></a></li>
 			</ul>
 		</div>
 
@@ -90,12 +91,13 @@
 					<li class="menuItem"><a href="#whatis">About me</a></li>
 					<li class="menuItem"><a href="#useit">Curriculum</a></li>
 					<li class="menuItem"><a href="#screen">Publications</a></li>
-					<li class="menuItem"><a href="#credits">Notes</a></li>
+					<li class="menuItem"><a style="cursor:pointer" data-toggle="tooltip" title="Comming Soon!" data-placement="bottom">Notes</a></li>
 					<li class="menuItem"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
 
 	<!-- About me -->
 	<div id="whatis" class="content-section-b" style="border-top: 0">
@@ -603,6 +605,13 @@
 	<script src="js/uiMorphingButton_inflow.js"></script>
 	<!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script>
+
+  <!-- Initializing Bootstrap tooltips -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
 </body>
 
