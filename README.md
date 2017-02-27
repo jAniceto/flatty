@@ -1,6 +1,7 @@
-# My personal website
+# Personal website
 
-joseaniceto.com
+aniceto.me
 
-Version 2 joseaniceto.com/clean-white
-Version 1 joseaniceto.com/wanderer
+Version 2 aniceto.me/clean-white
+
+Version 1 aniceto.me/wanderer
