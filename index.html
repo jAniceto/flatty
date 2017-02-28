@@ -3,6 +3,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="José Aniceto Engenharia Química Chemical Engineering">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
   <title>José Aniceto</title>
 
@@ -279,10 +280,16 @@
 	  <div class="container">
       <div class="col-md-6 col-md-offset-3 text-center wrap_title">
 				<h2>Publications</h2>
-        <p class="lead" style="margin-top:0; font-size: 14px"><span class="pub-toogle" id="journal-toggle">Journal Articles (9)</span> &nbsp;<strong>|</strong>&nbsp; <span class="pub-toogle" id="book-toggle">Book Chapters (2)</span> &nbsp;<strong>|</strong>&nbsp; <span class="pub-toogle" id="communication-toggle">Communications (3)</span></p>
+        <p class="lead" style="margin-top:0; font-size: 14px">
+          <span class="pub-toogle toggle-on" id="journal-toggle">Journal Articles</span> <span id="counter-articles"></span>
+          &nbsp;<strong>|</strong>&nbsp;
+          <span class="pub-toogle toggle-on" id="book-toggle">Book Chapters</span> <span id="counter-chapters"></span>
+          &nbsp;<strong>|</strong>&nbsp;
+          <span class="pub-toogle toggle-on" id="communication-toggle">Communications</span> <span id="counter-communications"></span></p>
       </div>
       <div class="row">
         <div class="col-md-12">
+
           <div class="row pub">
             <div class="col-md-2 wow fadeInLeftBig hidden-xs" data-animation-delay="200"><img class="img-responsive journal-cover" src="images/journal-covers/comp-chem-eng.png" alt=""></div>
             <div class="col-md-10 wow fadeInRightBig" data-animation-delay="200">
@@ -371,16 +378,10 @@
             <div class="col-md-2 wow fadeInLeftBig hidden-xs" data-animation-delay="200"><img class="img-responsive journal-cover" src="images/journal-covers/chempor2011.jpg" alt=""></div>
             <div class="col-md-10 wow fadeInRightBig" data-animation-delay="200">
               <p class="pub-tag">Communication</p>
-              <a class="pub-collapse" href="#collapseExample" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseExample"><p class="lead">B Soares, JPS Aniceto, CSR Freire, I Brand&atilde;o, CM Silva, I Portugal, CP Neto, Valorization of Coffee grounds by oxypropylation, Chempor 2011, 2011.</p></a>
-              <div class="collapse abstract-expandable" id="collapseExample">
-                <div class="well">
-                  <p class="abstract">Coffee grounds, the spent residue of the production of instant or soluble coffee, are blended into compost or reprocessed into animal feed; the large majority is burned for waste disposal and energy recovery, which yields carbon dioxide, the most important greenhouse gas. Considering that almost 45% of the dry weight in coffee grounds consists of cellulose and hemicellulose, the conversion of this by-product into higher added-value liquid polyols by oxypropylation of the accessible OH groups can be envisaged. The use of such polyols in the synthesis of polyurethanes and polyesters, for example, represents a valuable contribution for the gradual shift from a petroleum-based economy towards a bio-based economy.</p>
-                  <p class="abstract">The oxypropylation reaction includes a functionalization step with a strong BrØnsted base to transform the substrate OH groups into the corresponding oxianions. Then, the propylene oxide oligomers formed by ring-opening anionic polymerization are grafted to the substrate through these oxianions. Because of inevitable transfer reactions, homopolymerization of propylene oxide occurs simultaneously. Thus, the final product is a mixture of oxypropylated biomass, propylene oxide homopolymer and some unreacted biomass (residue) that can be used directly in the production of polyurethanes.</p>
-                  <a class="btn btn-primary btn-xs" target="_blank" href="https://www.researchgate.net/profile/Belinda_Soares/publication/236587372_Valorization_of_Coffee_grounds_by_oxypropylation/links/0c96051b62e36a6569000000.pdf">LINK</a>
-                </div>
-              </div>
+              <p class="lead">B Soares, JPS Aniceto, CSR Freire, I Brand&atilde;o, CM Silva, I Portugal, CP Neto, Valorization of Coffee grounds by oxypropylation, Chempor 2011, 2011.</p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -472,7 +473,7 @@
 				<div class="col-md-5 col-md-push-1 address">
 					<address>
 					<h3>Office Location</h3>
-					<p class="lead"><a href="">Egichem Laboratory (29.1.5)<br>
+					<p class="lead"><a href="">Egichem Laboratory<br>
 					Technological Laboratory Complex<br>
 					University of Aveiro<br>
           Campus Universitário de Santiago<br>
@@ -498,8 +499,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <!-- <h3 class="footer-title">Follow Me!</h3>
-            <p>Vuoi ricevere news su altri template?<br/>
+            <h3 class="footer-title"></h3>
+            <!-- <p>Vuoi ricevere news su altri template?<br/>
               Visita Andrea Galanti.it e vedrai tutte le news riguardanti nuovi Theme!<br/>
               Go to: <a  href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
             </p> -->
@@ -509,10 +510,10 @@
             <div class="footer-banner">
               <h3 class="footer-title">José Aniceto</h3>
               <ul>
-                <li><a href="#whatis">About me</a></li>
-                <li><a href="#useit">Curriculum</a></li>
-                <li><a href="#screen">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>PhD Student in Chemical Enginering</li>
+                <li>Egichem Group</li>
+                <li>CICECO - Aveiro Institute of Materials</li>
+                <li>University of Aveiro</li>
               </ul>
             </div>
           </div>
@@ -525,6 +526,7 @@
   <script src="js/bootstrap.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/script.js"></script>
+  <script src="js/publications-sorter.js"></script>
 
   <!-- StikyMenu -->
 	<script src="js/stickUp.min.js"></script>

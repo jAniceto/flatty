@@ -69,10 +69,12 @@
   text-transform: uppercase;
 }
 
-.pub-toogle:hover {
-  text-transform: uppercase;
-  /*font-weight: 600;*/
+.toggle-on {
   text-shadow:0 0 1px #34495e;
+}
+
+.pub-toogle:hover {
+  text-shadow: none;
   cursor: pointer;
   cursor: hand;
 }
@@ -96,8 +98,7 @@
   text-justify: inter-word;
 }
 
-
 /* Footer */
 .footer-banner {
-  min-height: 250px;
+  min-height: 200px;
 }
