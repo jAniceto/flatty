@@ -16,9 +16,15 @@ for (var i = 0; i <= pubList.length; i++) {
   };
 };
 
-$('#counter-articles').html('(' + nArticles + ')');
-$('#counter-chapters').html('(' + nChapters + ')');
-$('#counter-communications').html('(' + nComminications + ')');
+// Populate counters in the Publications section
+$('#counter-articles').html('' + nArticles);
+$('#counter-chapters').html('' + nChapters);
+$('#counter-communications').html('' + nComminications);
+
+// Populate counters in the About me section
+$('#counter-articles-').html('' + nArticles);
+$('#counter-chapters-').html('' + nChapters);
+$('#counter-communications-').html('' + nComminications);
 
 
 // Toggles for publication type
