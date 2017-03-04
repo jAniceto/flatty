@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+  background-color: #286DA8;
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+
+.row {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+#form-submit {
+  background: #CD5360;
+}
+
+#input-feedback {margin: 1.5em 0em}
+
+#link_data {
+  margin: 200px 0;
+  color: #9a9a9a;
+  font-size: 0.9em;
+}
+
+::-webkit-input-placeholder {text-align: center;}

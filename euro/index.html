@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="expenses.ico">
+  <title>Personal Expenses</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css"
+</head>
+
+
+<body>
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='';}"></iframe>
+
+<div class="container">
+
+  <div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1>Personal Expenses</h1>
+    <form id="input-form" action="" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+      <div class="form-group">
+          <label for="expense" class="radio-inline"><input type="radio" id="expense" name="type" value="Expense" checked>Expense</label>
+          <label for="income" class="radio-inline"><input type="radio" id="income" name="type" value="Income">Income</label>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="input-q2" placeholder="What" name="q2" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <input type="number" step="0.01" class="form-control" id="input-q3" placeholder="How much" name="q3" autocomplete="off">
+      </div>
+      <button id="form-submit" type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+
+    <p id="input-feedback"></p>
+
+    <a id="link_data" target="_blank" href="https://docs.google.com/spreadsheets/d/146n_KcCFEfxIN6psdr5VuL0TqTEjjdQbqeh31LceHgg/edit?usp=sharing">dados aqui</a>
+  </div>
+  </div>
+</div>
+
+  <!-- Javascript -->
+  <script>
+    $('#input-form').one('submit',function(){
+      if(document.getElementById('expense').checked) {
+        var inputq1 = encodeURIComponent($('#expense').val());
+      }else if(document.getElementById('income').checked) {
+        var inputq1 = encodeURIComponent($('#income').val());
+      };
+      var inputq2 = encodeURIComponent($('#input-q2').val());
+      var inputq3 = encodeURIComponent($('#input-q3').val());
+      var q1ID = "entry.813058856";
+      var q2ID = "entry.1748527234";
+      var q3ID = "entry.10363173";
+      var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLScz82ZZZwbA245mOaEApsT6Gns6OvE8deOOcXgz2NBAqEKA_w/formResponse?';
+      var submitRef = '&submit=6005917226523595415';
+      var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2+ "&" + q3ID + "=" + inputq3 + submitRef);
+      console.log(submitURL);
+      $(this)[0].action=submitURL;
+      $('#input-feedback').text('Added :)');
+    });
+  </script>
+
+</body>
+</html>
