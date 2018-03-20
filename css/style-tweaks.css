@@ -3,6 +3,11 @@
   margin-top: -20px;
 }
 
+.textLink {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
 /*Landing Page*/
 .intro-header {
   background: url(../images/background2.jpg) no-repeat center center;
