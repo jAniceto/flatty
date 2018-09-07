@@ -2,10 +2,43 @@
   margin-top: 4%;
 }
 
-.row {
+.project {
   margin-top: 7%;
 }
 
 .image-link {
+  text-align: right;
+}
+
+.image-link img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* New button style */
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, 
+input[type="reset"].button-primary, input[type="button"].button-primary {
+  background-color: #FF1800;
+  border-color: #FF1800;
+}
+
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, 
+input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, 
+.button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, 
+input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+  background-color: #CC1300;
+  border-color: #CC1300;
+}
+
+
+/* FOOTER */
+#footer {
+  border-top: 1px solid #eee;
+  margin-top: 5%;
+  padding: 15px 0;
+  font-size: 75%;
+}
+
+#footer div:nth-child(2) {
   text-align: right;
 }
