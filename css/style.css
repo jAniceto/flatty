@@ -22,7 +22,11 @@
 }
 
 
-/* New button style */
+/* New color style */
+a {
+  color: #FF1800;
+}
+
 .button.button-primary, button.button-primary, input[type="submit"].button-primary, 
 input[type="reset"].button-primary, input[type="button"].button-primary {
   background-color: #FF1800;
