@@ -17,7 +17,8 @@
 }
 
 .image-link img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
 }
 
 @media (max-width: 550px) {
@@ -55,6 +56,6 @@ input[type="reset"].button-primary:focus, input[type="button"].button-primary:fo
   font-size: 75%;
 }
 
-#footer div:nth-child(2) {
+#footer div {
   text-align: right;
 }
