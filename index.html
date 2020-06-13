@@ -41,30 +41,38 @@
 
   <script id="handlebars-demo" type="text/x-handlebars-template">
     
-    <div class="container">
-    
-      <div id="intro">
-        <strong><h1 class="title">{{sitename}}</h1></strong>
-        <p>{{{intro}}}</p>
+    <header>
+      <div class="container">
+        <div id="intro">
+          <strong><h1 class="title">{{sitename}}</h1></strong>
+          <p>{{{intro}}}</p>
+        </div>
       </div>
+    </header>
 
+    <div class="container">
       {{#each projects}}  
   
       <div class="row project">
         <div class="eight columns">
           <h4>{{this.name}}</h4>
           <p>{{{this.description}}}</p>
-          
+
+          {{#if this.URL}}
           <a class="button button-primary" 
             href={{this.URL}}
             target="_blank">
             {{this.linkText}}
           </a>
+          {{/if}}
+
+          {{#if this.githubURL}}
           <a class="button" 
             href={{this.githubURL}}
             target="_blank">
             Github Repo
           </a>
+          {{/if}}
         </div>
         <div class="four columns">
           <a class="image-link" href={{this.URL}} target="_blank">
@@ -74,16 +82,20 @@
       </div>
 
       {{/each}}
-  
-      <div id="footer">
-        <div class="row">
-          <div class="columns u-pull-right">
-            José Aniceto
+
+    </div>
+
+    <footer>
+      <div class="container">
+        <div id="footer">
+          <div class="row">
+            <div class="columns u-pull-right">
+              José Aniceto
+            </div>
           </div>
         </div>
       </div>
-  
-    </div>
+    </footer>
 
   </script>
 

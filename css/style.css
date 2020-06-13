@@ -1,11 +1,29 @@
-/* INTRO */
-#intro {
-  border-bottom: 1px solid #eee;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
-.title {
-  margin-top: 4%;
+/* HEADER */
+header {
+    background-color: #EDEFF1;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #eee;
 }
+
+/* #intro {
+  border-bottom: 1px solid #eee;
+} */
+
+/* .title {
+  padding-top: 3%;
+  padding-bottom: 3%;
+} */
 
 .project {
   margin-top: 7%;
@@ -30,32 +48,50 @@
 
 /* New color style */
 a {
-  color: #FF1800;
+  color: #34495E;
 }
 
 .button.button-primary, button.button-primary, input[type="submit"].button-primary, 
 input[type="reset"].button-primary, input[type="button"].button-primary {
-  background-color: #FF1800;
-  border-color: #FF1800;
+  background-color: #34495E;
+  border-color: #34495E;
 }
 
 .button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, 
 input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, 
 .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, 
 input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
-  background-color: #CC1300;
-  border-color: #CC1300;
+  background-color: #212f3d;
+  border-color: #212f3d;
 }
 
 
 /* FOOTER */
+footer {
+    background-color: #EDEFF1;
+    /* padding-top: 2%;
+    padding-bottom: 1%; */
+    border-top: 1px solid #eee;
+    margin-top: 5%;
+}
+
 #footer {
   border-top: 1px solid #eee;
-  margin-top: 5%;
   padding: 15px 0;
   font-size: 75%;
 }
 
 #footer div {
   text-align: right;
+}
+
+/* Override highlight color */
+::selection { /* WebKit/Blink Browsers */
+    background: #1ABC9C; 
+    color: white;
+}
+
+::-moz-selection { /* Gecko Browsers */
+    background: #1ABC9C; 
+    color: white;
 }
