@@ -4,12 +4,22 @@ var context = {
   "intro" : "Hi! My name is José Aniceto. Below is a list of my public projects. Fell free to <a href='//joseaniceto.com'>contact me</a> if you have any question." ,
   "projects": [
     {
-      "name": "Pauper Deck Library V2",
+      "name": "Murus",
+      "description": 'A beautiful new tab page replacement for Google Chrome Extension developed in pure Javascript. Possibility to select wallpaper from several sources including any image subreddit.',
+      "imageURL": "murus.png",
+      "linkText": "",
+      "URL": "",
+      "githubURL": "//github.com/jAniceto/murus/",
+      "tags": ["Chrome Extension", "Javascript", "API"]
+    },
+    {
+      "name": "Pauper Deck Library v2",
       "description": 'A curated webpage of Magic: The Gathering decks, with card price information obtained from an external API. Built with <a href="https://reactjs.org/" target="_blank">ReactJS</a>.',
       "imageURL": "pauper-library-v2.png",
       "linkText": "See it live!",
       "URL": "//janiceto.github.io/pauper-library-react/",
       "githubURL": "//github.com/jAniceto/pauper-library-react",
+      "tags": ["ReactJS", "Python", "APIs"]
     },
     {
       "name": "Spell Guesser",
@@ -18,14 +28,16 @@ var context = {
       "linkText": "Play with it!",
       "URL": "https://janiceto.github.io/spell-guesser/",
       "githubURL": "//github.com/jAniceto/spell-guesser",
+      "tags": ["ReactJS", "Javascript"]
     },
     {
-      "name": "Evidentia",
-      "description": 'A place for visual representations of data focusing on both interesting data and aesthetically pleasing visualizations. Data vis mostly done with Python and <a href="https://jupyter.org/index.html" target="_blank">Jupyter Notebooks</a>, using <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>, <a href="https://matplotlib.org/basemap/index.html" target="_blank">Basemap</a> and <a href="https://seaborn.pydata.org/" target="_blank">Seaborn</a>.',
-      "imageURL": "evidentia.png",
+      "name": "Ipso facto",
+      "description": 'A collection of articles on math, data and code. Data vis mostly done with Python and <a href="https://jupyter.org/index.html" target="_blank">Jupyter Notebooks</a>, using <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>, <a href="https://matplotlib.org/basemap/index.html" target="_blank">Basemap</a> and <a href="https://seaborn.pydata.org/" target="_blank">Seaborn</a>.',
+      "imageURL": "ipso-facto.png",
       "linkText": "See it live!",
-      "URL": "http://evidentia.joseaniceto.com/",
+      "URL": "https://ipso-facto.joseaniceto.com/",
       "githubURL": "github.com/jAniceto/data-viz",
+      "tags": ["Python", "Pandas", "SciPy", "Matplotlib", "Pelican"]
     },
     {
       "name": "EgiChem Group Website",
@@ -34,14 +46,16 @@ var context = {
       "linkText": "See it live!",
       "URL": "https://www.egichem.com",
       "githubURL": "",
+      "tags": ["Python", "Django", "Heroku", "AWS S3", "Bootstrap"]
     },
     {
-      "name": "Pauper Deck Library V1",
+      "name": "Pauper Deck Library v1",
       "description": 'A webpage dedicated to browse Magic: The Gathering decks, with updated card price information obtained from an API. A completely static website built with Python and the <a href="http://jinja.pocoo.org/docs/2.10/">Jinja2</a> templating language.',
       "imageURL": "pauper-library.jpg",
       "linkText": "See it live!",
       "URL": "//janiceto.github.io/pauper-library/",
       "githubURL": "//github.com/jAniceto/pauper-library",
+      "tags": ["Python", "HTML/CSS", "Javascript", "Jinja", "APIs", "Bootstrap"]
     },
     {
       "name": "Annotatio",
@@ -50,6 +64,7 @@ var context = {
       "linkText": "See it live!",
       "URL": "//janiceto.github.io/programming-notes-blog",
       "githubURL": "//github.com/jAniceto/programming-notes",
+      "tags": ["Python", "Pelican", "Markdown"]
     },
     {
       "name": "Chromatography Suite",
@@ -58,6 +73,7 @@ var context = {
       "linkText": "",
       "URL": "",
       "githubURL": "//github.com/jAniceto/chromatography",
+      "tags": ["Matlab", "Optimization", "Numerical Methods"]
     },
     {
       "name": "Portugal on Reddit",
@@ -66,6 +82,7 @@ var context = {
       "linkText": "See it live!",
       "URL": "https://www.reddit.com/r/PortugalOnReddit/",
       "githubURL": "",
+      "tags": ["Python", "APIs", "Linux"]
     },
     {
       "name": "Text formatter",
@@ -74,6 +91,7 @@ var context = {
       "linkText": "See it live!",
       "URL": "//janiceto.github.io/text-formatter",
       "githubURL": "//github.com/jAniceto/text-formatter",
+      "tags": ["HTML/CSS", "Javascript", "SkeletonCSS"]
     },
   ]
 };
